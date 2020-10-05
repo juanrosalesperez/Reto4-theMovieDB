@@ -15,13 +15,9 @@ export class Movie extends Component {
     // Funcion para conseguir el imagen y si no  poner imagen por defecto
     let urlimg = "";
     if (movie.poster_path) {
-      urlimg = `http://image.tmdb.org/t/p/w220_and_h330_face${
-        movie.poster_path
-      }`;
+      urlimg = `http://image.tmdb.org/t/p/w220_and_h330_face${movie.poster_path}`;
     } else if (movie.backdrop_path) {
-      urlimg = `http://image.tmdb.org/t/p/w220_and_h330_face${
-        movie.backdrop_path
-      }`;
+      urlimg = `http://image.tmdb.org/t/p/w220_and_h330_face${movie.backdrop_path}`;
     } else if (!movie.backdrop_path && !movie.poster_path) {
       urlimg = imgDefault;
     }
@@ -81,7 +77,4 @@ const mapStateToProps = (state) => ({
   movie: state.movies.movie,
 });
 
-export default connect(
-  mapStateToProps,
-  { fetchMovie }
-)(Movie);
+export default connect(mapStateToProps, { fetchMovie })(Movie);
