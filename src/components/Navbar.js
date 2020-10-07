@@ -10,6 +10,13 @@ function Navbar() {
             <Link
               style={styles.linkStyle}
               className="navbar-brand text-white text-lg brand-text"
+              to="/series"
+            >
+              Series
+            </Link>
+            <Link
+              style={styles.linkStyle}
+              className="navbar-brand text-white text-lg brand-text"
               to="/movies"
             >
               Películas
