@@ -7,7 +7,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 
 import LandingMovies from "./components/LandingMovies";
+import LandingSeries from "./components/LandingSeries";
 import Movie from "./components/Movie";
+import Serie from "./components/Serie";
 
 class App extends Component {
   render() {
@@ -19,6 +21,8 @@ class App extends Component {
             <Route exact path="/" component={LandingMovies} />
             <Route exact path="/movies" component={LandingMovies} />
             <Route exact path="/movie/:id" component={Movie} />
+            <Route exact path="/series" component={LandingSeries} />
+            <Route exact path="/serie/:id" component={Serie} />
           </div>
         </Router>
       </Provider>
