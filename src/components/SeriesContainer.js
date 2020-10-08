@@ -19,6 +19,7 @@ export class SeriesContainer extends Component {
   }
 }
 
+//Extraemos los datos
 const mapStateToProps = (state) => ({
   series: state.series.series,
 });

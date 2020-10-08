@@ -1,5 +1,6 @@
 import { CONSTANTS } from "../actions";
 
+//Generamos un estado inicial
 const initialState = {
   text: "",
   movies: [],

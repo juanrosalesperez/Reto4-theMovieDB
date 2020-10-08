@@ -13,6 +13,8 @@ import Serie from "./components/Serie";
 
 class App extends Component {
   render() {
+    // Con Navbar añadimos la barra de navegación
+    // Con Route añadimos las rutas que se utilizaran en la página
     return (
       <Provider store={store}>
         <Router>

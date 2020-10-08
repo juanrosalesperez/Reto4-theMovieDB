@@ -32,6 +32,7 @@ export class Serie extends Component {
     // Funcion para conseguir el genero
     let genre = serie.genres.map((x) => <li key={x.id}>{x.name}</li>);
 
+    //realizamos la plantilla que exportamos
     let serieInfo = (
       <div className="container">
         <div className="row">
@@ -73,6 +74,7 @@ export class Serie extends Component {
   }
 }
 
+//Extraemos los datos
 const mapStateToProps = (state) => ({
   serie: state.series.serie,
 });

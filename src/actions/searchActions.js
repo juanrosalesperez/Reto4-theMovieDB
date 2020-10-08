@@ -3,6 +3,7 @@ import axios from "axios";
 
 import { APIKey } from "../APIKey";
 
+// Creamos constante para la busqueda
 export const searchMovie = (text) => (dispatch) => {
   dispatch({
     type: CONSTANTS.SEARCH_MOVIE,
@@ -10,6 +11,7 @@ export const searchMovie = (text) => (dispatch) => {
   });
 };
 
+// Creamos constante para llamar a la api de la busqueda
 export const fetchMovies = (text) => (dispatch) => {
   axios
     .get(
@@ -24,6 +26,7 @@ export const fetchMovies = (text) => (dispatch) => {
     .catch((err) => console.log(err));
 };
 
+// Creamos constante para llamar a la api de la pelicula por ID
 export const fetchMovie = (id) => (dispatch) => {
   axios
     .get(
@@ -38,6 +41,7 @@ export const fetchMovie = (id) => (dispatch) => {
     .catch((err) => console.log(err));
 };
 
+// Creamos constante para la busqueda
 export const searchSerie = (text) => (dispatch) => {
   dispatch({
     type: CONSTANTS.SEARCH_SERIE,
@@ -45,6 +49,7 @@ export const searchSerie = (text) => (dispatch) => {
   });
 };
 
+// Creamos constante para llamar a la api de la busqueda
 export const fetchSeries = (text) => (dispatch) => {
   axios
     .get(
@@ -59,6 +64,7 @@ export const fetchSeries = (text) => (dispatch) => {
     .catch((err) => console.log(err));
 };
 
+// Creamos constante para llamar a la api de la serie por ID
 export const fetchSerie = (tv_id) => (dispatch) => {
   axios
     .get(

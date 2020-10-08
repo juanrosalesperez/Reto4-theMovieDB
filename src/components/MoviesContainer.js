@@ -19,6 +19,7 @@ export class MoviesContainer extends Component {
   }
 }
 
+//Extraemos los datos
 const mapStateToProps = (state) => ({
   movies: state.movies.movies,
 });
